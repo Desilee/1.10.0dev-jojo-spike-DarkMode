@@ -122,6 +122,7 @@ final class StatusTableViewController: ChartsTableViewController {
         updateBolusProgress()
         
         //DarkMode
+        setNeedsStatusBarAppearanceUpdate()
         navigationController?.toolbar.barTintColor = darkMode ? UIColor.black.lighter(by: 25) : .white
         //DarkMode
     }
