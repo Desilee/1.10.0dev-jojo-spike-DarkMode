@@ -30,9 +30,9 @@ class TitleSubtitleTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
         gradient.frame = bounds
+        //DarkMode
         // disabled follow line for DarkMode implementation - clvsjr9
         //gradient.colors = [UIColor.white.cgColor, UIColor.cellBackgroundColor.cgColor]
-        //DarkMode
         gradient.colors = [UIColor.black.lighter(by: 25)!.cgColor, UIColor.black.lighter(by: 25)!.cgColor]
         //DarkMode
         backgroundView?.layer.insertSublayer(gradient, at: 0)

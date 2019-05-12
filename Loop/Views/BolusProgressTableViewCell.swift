@@ -54,7 +54,11 @@ public class BolusProgressTableViewCell: UITableViewCell {
         super.awakeFromNib()
 
         gradient.frame = bounds
-        gradient.colors = [UIColor.white.cgColor, UIColor.cellBackgroundColor.cgColor]
+        //DarkMode
+        // disabled follow line for DarkMode implementation - clvsjr9
+        //gradient.colors = [UIColor.white.cgColor, UIColor.cellBackgroundColor.cgColor]
+        gradient.colors = [UIColor.black.lighter(by: 25)!.cgColor, UIColor.black.lighter(by: 25)!.cgColor]
+        //DarkMode
         backgroundView?.layer.insertSublayer(gradient, at: 0)
         updateProgressColor()
     }
