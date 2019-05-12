@@ -58,6 +58,7 @@ public class BolusProgressTableViewCell: UITableViewCell {
         // disabled follow line for DarkMode implementation - clvsjr9
         //gradient.colors = [UIColor.white.cgColor, UIColor.cellBackgroundColor.cgColor]
         gradient.colors = [UIColor.black.lighter(by: 25)!.cgColor, UIColor.black.lighter(by: 25)!.cgColor]
+        progressLabel.textColor = .white
         //DarkMode
         backgroundView?.layer.insertSublayer(gradient, at: 0)
         updateProgressColor()
